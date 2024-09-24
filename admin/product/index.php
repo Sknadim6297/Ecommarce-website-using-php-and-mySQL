@@ -18,16 +18,16 @@
   <body>
     <div class="container ">
         <div class="row">
-    <div class="col-md-4 m-auto mt-5">
+    <div class="col-md-6 m-auto mt-5">
     
     
     <form action="insert.php" method="POST" enctype="multipart/form-data">
 
     
   <div class="mb-3">
-<p class="text-center fw-bold fs-3 text-warning">Product details :</p>
+<p class="text-center fw-bold fs-3">Fill your product details</p>
 </div>
-<div class="mb-3">
+<div class="mb-3 mt-5">
   <label for="formGroupExampleInput2" class="form-label">Product name:</label>
   <input type="text" class="form-control" name="Pname" placeholder="Enter the product name">
 </div>
@@ -44,55 +44,20 @@
   <select class="form-select" aria-label="Default select example" name="Pages">
   <option value="Select menu">Select menu</option>
   <option value="Laptop">Laptop</option>
-  <option value="Bag">Bag</option>
   <option value="Mobile">Mobile</option>
+  <option value="Bag">Bag</option>
+  <option value="Watch">watch</option>
+  <option value="Airpod">airpod</option>
+  <option value="Earphone">earphone</option>
+  <option value="Speaker">speaker</option>
+  <option value="Trimmer">trimmer</option>
+  <option value="Camera">camera</option>
 </select>
 </div>
-<button name="submit" class="form-control bg-danger fs-4 fw-bold my-3 text-white">Upload</button>
+<button name="submit" class="form-control bg-black fs-4 fw-bold my-3 text-white">Upload</button>
 </form>
 <div></div>
         </div>
-
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 m-auto">
-
-            
-        <!-- fetch data -->
-
-        <table class="table table-hover border my-5">
-          <thead>
-            <th>Id </th>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Category</th>
-            <th>Image</th>
-            <th>Update</th>
-            <th>delete</th>
-          </thead>
-          <tbody>
-            <?php 
-            include 'Config.php';
-            $Record=mysqli_query($con,"SELECT * FROM `Allproducts`");
-            while ( $row=mysqli_fetch_array($Record)){
-              echo "
-                <tr>
-                <td>".$row['id']."</td>
-                <td>".$row['PName']."</td>
-                <td>".$row['PPrice']."</td>
-                <td>".$row['PCategory']."</td>
-                <td><img src='".$row['PImage']."' width='100px' height='100px'></td>
-                <td><a href='update.php?id=".$row['id']."'>Update</a></td>
-                <td><a href='delete.php?id=".$row['id']."'>Delete</a></td>
-                </tr>
-              ";
-            }
-            ?>
-          </tbody>
-</table>
-</div>
-          </div>
-        </div>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -32,23 +32,35 @@
     <a href="index.php" class="text-decoration-none"> <i class="fa-solid fa-house p-1"></i>Home</a> |
     <a href="viewCart.php" class="text-decoration-none"> <i class="fa-solid fa-cart-shopping p-1"></i>Cart(<?php echo $cart_count ?>)</a>|
     <a href="../user/form/login.php" class="text-decoration-none"> <i class="fa-solid fa-user p-1"></i>
+    
     <?php
     if(isset($_SESSION['email'])){
       echo $_SESSION['email'];
     }else{
       echo "Login";
     }
-    ?>
+    ?>  
   </a>|
-    <a href="../admin/mystore.php" class="text-decoration-none"><i class="fa-solid fa-user-pen p-1"></i>Admin</a>
+    <a href="../admin/mystore.php" class="text-decoration-none"><i class="fa-solid fa-user-pen p-1"></i>Admin</a>|
+    <a href="../user/form/logout.php" class="text-decoration-none"><i class="fa-solid fa-power-off p-1"></i>Logout</a> 
     </div>
+    
   </div>
+  
 </nav>
 <div class="bg-primary">
     <ul class="list-unstyled d-flex justify-content-center p-2">
-        <li><a href="Laptop.php" class="text-decoration-none fs-5 px-5 fw-bold text-white" >Laptop</a></li>
-        <li><a href="Mobiles.php" class="text-decoration-none fs-5 px-5 fw-bold text-white" >Mobiles</a></li>
-        <li><a href="Bag.php" class="text-decoration-none fs-5 px-5 fw-bold text-white" >Bags</a></li>
+    <li><a href="index.php" class="text-decoration-none fs-5 px-4 fw-bold text-white" >All</a></li>
+        <li><a href="Laptop.php" class="text-decoration-none fs-5 px-4 fw-bold text-white" >Laptop</a></li>
+        <li><a href="Mobiles.php" class="text-decoration-none fs-5 px-4 fw-bold text-white" >Mobiles</a></li>
+        <li><a href="Bag.php" class="text-decoration-none fs-5 px-4 fw-bold text-white" >Bags</a></li>
+        <li><a href="watch.php" class="text-decoration-none fs-5 px-4 fw-bold text-white" >Watch</a></li>
+        <li><a href="airpod.php" class="text-decoration-none fs-5 px-4 fw-bold text-white" >Airpods</a></li>
+        <li><a href="earphone.php" class="text-decoration-none fs-5 px-4 fw-bold text-white" >Earphones</a></li>
+        <li><a href="speaker.php" class="text-decoration-none fs-5 px-4 fw-bold text-white" >Speakers</a></li>
+        <li><a href="camera.php" class="text-decoration-none fs-5 px-4 fw-bold text-white" >Camera</a></li>
+        <li><a href="trimmer.php" class="text-decoration-none fs-5 px-4 fw-bold text-white" >Trimmers</a></li>
+
        
     </ul>
 </div>

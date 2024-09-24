@@ -12,6 +12,7 @@ session_start();
 
 if(mysqli_num_rows($result)){
     $_SESSION['email']=$email;
+    $_SESSION['username']=$username;
    echo "<script>alert('Login successful');
    window.location.href='../index.php';
    </script>";

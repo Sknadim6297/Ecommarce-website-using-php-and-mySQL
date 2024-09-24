@@ -15,6 +15,7 @@ if(isset($_POST['submit'])){
     
 
       mysqli_query($con,"INSERT INTO `Allproducts` (`PName`,`PPrice`,`PImage`,`PCategory`) VALUES ('$Product_name','$Product_price','$img_des','$Product_category')");
-      header('location:index.php');
+      echo '<script>alert("Product Inserted Successfully")</script>';
+      header('location:allproducts.php');
 }
 ?>

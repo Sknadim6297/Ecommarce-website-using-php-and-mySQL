@@ -7,9 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         .product-image {
-            width: 100%; /* Ensures the image takes the full width of the card */
-            height: 200px; /* Sets a fixed height for all images */
-            object-fit: contain; /* Ensures the image covers the area while maintaining aspect ratio */
+            width: 100%;
+            height: 200px; 
+            object-fit: contain; 
         }
     </style>
     <?php 
